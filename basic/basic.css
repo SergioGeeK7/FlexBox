@@ -1,0 +1,39 @@
+body{
+    box-sizing: border-box;
+    font-size: 80%;
+    padding: 1em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    background: green;
+    flex: 2 2 12em;
+    /*flex: 2 0 12em;*/
+    
+    /*Axis vs Across Axis */
+    
+    /* flex-grow	A number specifying how much the item will grow relative to the rest of the flexible items */
+    
+    /*flex-shrink	A number specifying how much the item will shrink relative to the rest of the flexible items*/
+    
+    /*flex-basis	The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit*/
+    
+    /*order: -1;*/
+}
+
+main{
+    height: 100%;
+    display: flex;
+}
+
+nav,aside {
+    flex: 1;
+}
+
+@media screen and (max-width:500px){
+    main{
+        flex-direction: column;
+    }
+}

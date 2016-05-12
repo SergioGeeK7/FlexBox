@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    border: 0;
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    border: solid 4px black;
+    width: 55%;
+    height: 30em;
+    text-align: center;
+}
+
+.flex-item {
+    color: blue;
+    font-size: 1.2em;
+    padding: 2em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.flex-item:last-child{
+    background: blue;
+    order: -1;
+    flex-grow: 4; /* just it grows, the others not */
+    /* flex-shrink: 2; just shirink the item acording to the others */
+    /*flex-basis: 10em; grow the more than the others if the flex-gow: 1 is present */
+}

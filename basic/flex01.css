@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    border: 0;
+}
+
+
+.flex-container {
+    display: inline-flex;
+    /*flex-direction: row;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row-reverse wrap-reverse;
+    /*flex-flow: column wrap;*/
+    /*flex-flow: column wrap;*/
+    /*flex-wrap: wrap-reverse;*/
+    border: solid 4px black;
+    width: 55%;
+    height: 30em;
+}
+
+.flex-item {
+    color: blue;
+    font-size: 1.2em;
+    padding: 2em;
+    text-align: center;
+}
